@@ -1,20 +1,9 @@
 function solution(num) {
-    if(num === 1){
-        return 1
+    let answer = 1
+    let i = 0
+    while(answer <= num){
+        i++
+        answer = answer*i
     }
-    if(num ===2){
-        return 2
-    }
-    let div = 1
-    const Arr = []
-    for(let i=1; i<num; i++){
-        div = div*i
-        if(div<=num){
-            Arr.push(i)
-        }
-        if(div>num){
-            break
-        }
-    }
-    return Arr[Arr.length-1]
+    return i-1
 }
