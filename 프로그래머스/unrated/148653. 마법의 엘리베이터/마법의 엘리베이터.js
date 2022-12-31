@@ -18,7 +18,6 @@ function solution(storey) {
           count += 10-Arr[i]
           console.log(count)
           Arr.splice(i-1,1,Arr[i-1]+1)
-          console.log(Arr)
         }
       
       if(Arr[i]===5){
