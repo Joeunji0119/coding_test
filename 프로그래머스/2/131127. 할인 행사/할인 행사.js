@@ -21,14 +21,15 @@ function solution(want, number, discount) {
 
         if (i > 9) { 
             let removeItem = discount[i - 10];
-            if (currentMap.has(removeItem)) {
-                let countValue = currentMap.get(removeItem);
-                if (countValue > 1) {
+            if(!currentMap.has(removeItem)) continue;
+            
+            let countValue = currentMap.get(removeItem);
+            if (countValue > 1) {
                     currentMap.set(removeItem, countValue - 1);
                 } else {
                     currentMap.delete(removeItem);
-                }
             }
+            
         }
 
 
