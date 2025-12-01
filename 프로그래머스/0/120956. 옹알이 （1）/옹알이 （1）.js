@@ -1,6 +1,3 @@
-
- let restFunc = (wordArr,i)=>wordArr.slice(i+1,word.length).join("")
-
 const canSpell = (word) => {
     let spall = ["aya","ye","woo","ma"]
     const wordArr = [...word]
