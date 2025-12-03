@@ -9,8 +9,5 @@ const reducer = (prev,action) => {
 }
 
 function solution(n, control) {
-    return control.split('').reduce((a,c)=> {
-        a = reducer(a,c)
-        return a
-    },n)
+    return control.split('').reduce((a,c)=> reducer(a,c), n)
 }
