@@ -13,7 +13,6 @@ const divisorsCount = (num) => {
 
 function solution(number, limit, power) {
     const arr = Array.from(({length:number}),(_,i)=>i+1)
-    console.log(arr)
     
     return arr.reduce((a,c)=>{
         let d = divisorsCount(c)
